@@ -18,7 +18,7 @@ const About: React.FC = () => {
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
               src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800&h=https://lh3.googleusercontent.com/gg-dl/AOI_d__zavBum935SjHlycNlD9fJnhxWjm2O1tAAV4QMlfSc8KWOhSZWGjZqSGXNd_H_YA-Gc8vv4dmwU9Gmx6k2plRC9xTgwyQSq9EW_5ChTXMABdFKL-ZLA7KRl3uCBte6KYAYqGeMBkbL4lJgnFBUAQL7icH8u6N-PzjGGvP8vK4sQq6QKQ=s1024-rj" 
-              alt="Sujon Ahmed Working" 
+              alt="Sujon Working" 
               className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
             />
           </div>
