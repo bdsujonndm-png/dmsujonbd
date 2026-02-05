@@ -2,12 +2,12 @@ import React from 'react';
 
 const About: React.FC = () => {
   const details = [
-    { label: 'Full Name', value: 'Md Milon Mia' },
+    { label: 'Full Name', value: 'SUJON AHMED' },
     { label: 'City', value: 'Rangpur, Bangladesh' },
-    { label: 'Age', value: '20 Years Old' },
-    { label: 'Email', value: 'bdmilondm@gmail.com' },
+    { label: 'Age', value: '19 Years Old' },
+    { label: 'Email', value: 'bdsujonndm@gmail.com' },
     { label: 'Nationality', value: 'Bangladeshi' },
-    { label: 'Specialization', value: 'YouTube Promotion & SEO' },
+    { label: 'Specialization', value: 'YouTube Promotion & SEO Expert' },
   ];
 
   return (
@@ -35,7 +35,7 @@ const About: React.FC = () => {
               About Me!
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-10 font-light">
-              As a dedicated <span className="text-white font-medium">Professional Digital Marketer</span>, I specialize in maximizing brand impact through cutting-edge SEO and platform-specific advertising. With over 1,500 successful projects under my belt, I help businesses navigate the digital landscape with data-driven precision and creative strategies.
+              As a dedicated <span className="text-white font-medium">Professional Digital Marketer</span>,  I’m Sujon Ahmed, a professional digital marketer with a wealth of experience in SEO technical skills, social media management, and Google Ads campaigns. I specialize in helping businesses like yours attract more customers, increase visibility, and achieve measurable growth through strategic, data-driven marketing. With advanced SEO techniques, I can boost your website’s ranking on search engines, driving high-quality, organic traffic. My social media strategies are designed to engage your audience, build brand loyalty, and foster lasting connections. And with targeted Google Ads, I ensure every dollar you spend is maximized for the best possible ROI. Let’s collaborate to make your brand shine online and drive the results that matter most to you. I’m ready to turn your digital marketing goals into reality! Looking forward to working together! Best, Sujon Ahmed, Digital Marketing Specialist.
             </p>
           </div>
 
