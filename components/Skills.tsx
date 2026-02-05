@@ -2,12 +2,12 @@ import React from 'react';
 
 const Skills: React.FC = () => {
   const skills = [
-    { name: 'YouTube SEO', level: 100 },
-    { name: 'Meta Ads (FB/IG)', level: 99 },
-    { name: 'Google Ads (SEM)', level: 95 },
-    { name: 'Technical SEO', level: 92 },
-    { name: 'Brand Management', level: 88 },
-    { name: 'Email Automation', level: 85 },
+    { name: 'YouTube Video Promotion', level: 100 },
+    { name: 'YouTube Video SEO', level: 99 },
+    { name: 'Brand Management', level: 95 },
+    { name: 'Google Ads', level: 92 },
+    { name: 'Meta Ads', level: 88 },
+    { name: 'Video Editing', level: 85 },
   ];
 
   return (
