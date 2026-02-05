@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
       <div className="text-center mb-20">
         <h2 className="text-yellow-400 font-black uppercase tracking-[0.4em] text-xs mb-4">Mastery</h2>
         <h3 className="text-4xl md:text-5xl font-extrabold italic">
-          Marketing <span className="text-gold-gradient">Skillset</span>
+          MY <span className="text-gold-gradient">SKILLS...</span>
         </h3>
       </div>
 
