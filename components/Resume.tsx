@@ -24,31 +24,31 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ year, title, subtitle, desc
 const Resume: React.FC = () => {
   const education = [
     { 
-      year: '2020 - Present', 
-      title: 'MBA (Business Administration)', 
-      institution: 'University of Rajshahi',
-      desc: 'Focusing on strategic management and digital marketing leadership.'
+      year: '2017- 2019', 
+      title: 'Study of Collage', 
+      institution: 'Kurigram Government Collage',
+      desc: 'I completed my Higher Secondary Certificate (HSC) in the Science stream from Kurigram Government College. My academic focus on Physics, Chemistry, and Biology not only provided a strong scientific foundation but also significantly sharpened my analytical thinking and problem-solving abilities.'
     },
     { 
       year: '2016 - 2020', 
-      title: 'BBA (Business Administration)', 
-      institution: 'University of Rajshahi',
-      desc: 'Foundation in marketing principles and consumer behavior.'
+      title: 'Bachelor of Business Administration', 
+      institution: 'Rangpur Collectorate College',
+      desc: 'I earned my BBA from Rangpur Collectorate College, where I specialized in the core principles of Digital Marketing, E-commerce, and SEO. This academic background provided me with a solid foundation in modern marketing strategies, enabling me to drive business growth through data-driven digital platforms.'
     },
   ];
 
   const experience = [
     { 
-      year: '2021 - Present', 
-      title: 'CEO & Founder', 
-      company: 'Milon IT Park',
-      desc: 'Leading a team of specialists to deliver high-ROI digital marketing solutions globally.'
+      year: '2022 - Now', 
+      title: 'Professional Digital Marketer', 
+      company: 'CEO, Sujon TI Expert.',
+      desc: 'As the CEO of Sujon-IT-Expert for the past 4 years, I have been driving business growth through expert YouTube SEO, Video Promotion, Google/Facebook Ads, and Website SEO. I specialize in delivering high-impact digital strategies that maximize brand visibility and ROI.'
     },
     { 
-      year: '2019 - 2021', 
-      title: 'Professional Digital Marketer', 
-      company: 'Freelance Specialist',
-      desc: 'Specialized in YouTube SEO, Google Ads, and Meta advertising for 500+ international clients.'
+      year: '2021 - 2022', 
+      title: 'YouTube Video SEO Trainer', 
+      company: 'TTC,Rangpure.',
+      desc: 'From 2021 to 2022, I served as a skilled "YouTube SEO" Trainer under the Bangladesh governments Learning and Earning Development Project TTC. Rangpure, helping freelancers improve their digital marketing skills through training.'
     },
   ];
 
