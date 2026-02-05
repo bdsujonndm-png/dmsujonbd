@@ -17,7 +17,7 @@ const About: React.FC = () => {
           <div className="absolute -top-4 -left-4 w-full h-full border-2 border-yellow-500/20 rounded-3xl -z-10 group-hover:-top-6 group-hover:-left-6 transition-all duration-500"></div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://imagehttps://https://t.me/c/3109939256/146.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi25LTz1sL9E8Q3K7UnFAqp9qiGoT1gnO6K4dZTkhyJJtmcGG2dbavHzvtMge6f2cuj0D93F5_SZ3KV3XOthi3591vT89nJO5jAzTN_2I4cXdhIGTzy7bt_v-0Z75rgDiYTm0RpkLJw74d-jviHjkWra2ig2QXX8q248q5njt0OD8AUMQi1R2AT7jsrD3M/s320/Screenshot_10.pngs.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800&h=1000" 
+              src="https://postimg.cc/9RZykJFY" 
               alt="sujon Working" 
               className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
             />
