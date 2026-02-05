@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               Feel free to reach out if you want to collaborate with me, or simply have a chat.
             </p>
             <a 
-              href="mailto:bdshayondm@gmail.com" 
+              href="mailto:bdsujonndm@gmail.com" 
               className="border border-[#3b1472] hover:border-[#7c3aed] hover:bg-purple-600/10 inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-lg transition-all group"
             >
               Start a new project 
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
               <h3 className="text-xl font-bold mb-6">Drop me a line</h3>
               <div className="flex items-center gap-4 text-gray-400 text-lg group">
                 <i className="fas fa-envelope text-purple-600"></i>
-                <a href="mailto:bdshayondm@gmail.com" className="hover:text-white transition-colors">bdshayondm@gmail.com</a>
+                <a href="mailto:bdsujonndm@gmail.com" className="hover:text-white transition-colors">bdsujonndm@gmail.com</a>
               </div>
             </div>
 
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
         {/* Final Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-[10px] font-black uppercase tracking-[0.4em]">
-            &copy; 2025 Milon IT Park Agency. All Rights Reserved.
+            &copy; 2025 Sujon Agency. All Rights Reserved.
           </p>
           <div className="flex gap-8 text-[9px] font-black uppercase tracking-[0.2em] text-gray-700">
             <a href="#" className="hover:text-yellow-400 transition-all">Privacy Policy</a>
