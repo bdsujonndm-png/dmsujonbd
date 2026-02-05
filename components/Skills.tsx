@@ -4,10 +4,9 @@ const Skills: React.FC = () => {
   const skills = [
     { name: 'YouTube Video Promotion', level: 100 },
     { name: 'YouTube Video SEO', level: 99 },
-    { name: 'Brand Management', level: 95 },
     { name: 'Google Ads', level: 92 },
     { name: 'Meta Ads', level: 88 },
-    { name: 'Video Editing', level: 85 },
+    ,
   ];
 
   return (
