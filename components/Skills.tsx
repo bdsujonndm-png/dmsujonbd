@@ -13,7 +13,7 @@ const Skills: React.FC = () => {
   return (
     <div className="max-w-5xl mx-auto px-6">
       <div className="text-center mb-20">
-        <h2 className="text-yellow-400 font-black uppercase tracking-[0.4em] text-xs mb-4">Mastery</h2>
+        <h2 className="text-yellow-400 font-black uppercase tracking-[0.4em] text-xs mb-4"></h2>
         <h3 className="text-4xl md:text-5xl font-extrabold italic">
           MY <span className="text-gold-gradient">SKILLS...</span>
         </h3>
