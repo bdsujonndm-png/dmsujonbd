@@ -17,8 +17,8 @@ const About: React.FC = () => {
           <div className="absolute -top-4 -left-4 w-full h-full border-2 border-yellow-500/20 rounded-3xl -z-10 group-hover:-top-6 group-hover:-left-6 transition-all duration-500"></div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800&h=1000" 
-              alt="Milon Working" 
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800&h=https://lh3.googleusercontent.com/gg-dl/AOI_d__zavBum935SjHlycNlD9fJnhxWjm2O1tAAV4QMlfSc8KWOhSZWGjZqSGXNd_H_YA-Gc8vv4dmwU9Gmx6k2plRC9xTgwyQSq9EW_5ChTXMABdFKL-ZLA7KRl3uCBte6KYAYqGeMBkbL4lJgnFBUAQL7icH8u6N-PzjGGvP8vK4sQq6QKQ=s1024-rj" 
+              alt="Sujon Ahmed Working" 
               className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
             />
           </div>
@@ -35,8 +35,7 @@ const About: React.FC = () => {
               About Me!
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-10 font-light">
-              <span className="text-white font-medium">Professional Digital Marketer</span>, 
-              I’m Sujon Ahmed, a professional digital marketer with a wealth of experience in SEO technical skills, social media management, and Google Ads campaigns. I specialize in helping businesses like yours attract more customers, increase visibility, and achieve measurable growth through strategic, data-driven marketing. With advanced SEO techniques, I can boost your website’s ranking on search engines, driving high-quality, organic traffic. My social media strategies are designed to engage your audience, build brand loyalty, and foster lasting connections. And with targeted Google Ads, I ensure every dollar you spend is maximized for the best possible ROI. Let’s collaborate to make your brand shine online and drive the results that matter most to you. I’m ready to turn your digital marketing goals into reality! Looking forward to working together! Best, Sujon Ahmed, Digital Marketing Specialist.
+              As a dedicated <span className="text-white font-medium">Professional Digital Marketer</span>,  I’m Sujon Ahmed, a professional digital marketer with a wealth of experience in SEO technical skills, social media management, and Google Ads campaigns. I specialize in helping businesses like yours attract more customers, increase visibility, and achieve measurable growth through strategic, data-driven marketing. With advanced SEO techniques, I can boost your website’s ranking on search engines, driving high-quality, organic traffic. My social media strategies are designed to engage your audience, build brand loyalty, and foster lasting connections. And with targeted Google Ads, I ensure every dollar you spend is maximized for the best possible ROI. Let’s collaborate to make your brand shine online and drive the results that matter most to you. I’m ready to turn your digital marketing goals into reality! Looking forward to working together! Best, Sujon Ahmed, Digital Marketing Specialist.
             </p>
           </div>
 
