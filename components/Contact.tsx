@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
         <h2 className="text-center text-4xl md:text-5xl font-extrabold mb-4 italic">
           Get <span className="text-gold-gradient">In Touch</span>
         </h2>
-        <p className="text-gray-400 font-light max-w-lg mx-auto">Please fill out the form to initiate a conversation about your next project.</p>
+        <p className="text-gray-400 font-light max-w-lg mx-auto"></p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-10 mb-20">
