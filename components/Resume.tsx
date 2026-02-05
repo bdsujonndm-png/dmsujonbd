@@ -55,7 +55,7 @@ const Resume: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6">
       <div className="text-center mb-20">
-        <h2 className="text-yellow-400 font-black uppercase tracking-[0.4em] text-xs mb-4">My Pathway</h2>
+        <h2 className="text-yellow-400 font-black uppercase tracking-[0.4em] text-xs mb-4"></h2>
         <h3 className="text-4xl md:text-5xl font-extrabold underline decoration-yellow-500 decoration-2 underline-offset-[16px]">
           My Resume
         </h3>
