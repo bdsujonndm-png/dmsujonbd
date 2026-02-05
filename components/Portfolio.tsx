@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 const Portfolio: React.FC = () => {
   const [filter, setFilter] = useState('All');
+  // State to handle how many items to show
+  const [itemsToShow, setItemsToShow] = useState(6);
   
   const categories = ['All', 'YouTube', 'SEO', 'Ads', 'Dashboards'];
   
@@ -12,22 +14,38 @@ const Portfolio: React.FC = () => {
     { title: 'Site Traffic Analytics', category: 'SEO', img: 'https://picsum.photos/seed/work4/600/450' },
     { title: 'E-commerce Meta Ads Scaling', category: 'Ads', img: 'https://picsum.photos/seed/work5/600/450' },
     { title: 'Technical SEO Audit Result', category: 'SEO', img: 'https://picsum.photos/seed/work6/600/450' },
+    // Ekhane tomar baki 14+ project gulo add koro...
+    { title: 'New SEO Project 7', category: 'SEO', img: 'https://picsum.photos/seed/work7/600/450' },
+    { title: 'New Ads Project 8', category: 'Ads', img: 'https://picsum.photos/seed/work8/600/450' },
+    { title: 'New SEO Project 9', category: 'SEO', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zwhySGCEBxRRFYIcQgvOLOpRGqrT3d7Qng&s' },
+    
+    // ... items add korte thako
   ];
 
+  // Filtering logic
   const filteredWorks = filter === 'All' ? works : works.filter(w => w.category === filter);
 
+  // Function to show more projects
+  const handleShowMore = () => {
+    setItemsToShow(works.length); // Sob gulo project show korbe
+  };
+
   return (
-    <div className="max-w-7xl mx-auto px-6">
+    <div className="max-w-7xl mx-auto px-6 py-20">
       <div className="text-center mb-16">
         <h2 className="text-yellow-400 font-bold uppercase tracking-[0.3em] mb-4">Portfolio</h2>
         <h3 className="text-4xl font-extrabold">Result Showcase</h3>
       </div>
 
+      {/* Categories Bar */}
       <div className="flex flex-wrap justify-center gap-4 mb-12">
         {categories.map(cat => (
           <button
             key={cat}
-            onClick={() => setFilter(cat)}
+            onClick={() => {
+              setFilter(cat);
+              setItemsToShow(6); // Filter change korle abar top 6-e fire jabe
+            }}
             className={`px-8 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 hover:scale-105 active:scale-90 ${filter === cat ? 'gold-gradient text-black shadow-lg shadow-yellow-500/10' : 'border border-white/10 text-gray-500 hover:border-yellow-400 hover:text-yellow-400'}`}
           >
             {cat}
@@ -35,8 +53,9 @@ const Portfolio: React.FC = () => {
         ))}
       </div>
 
+      {/* Portfolio Grid - Sliced by itemsToShow */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredWorks.map((work, idx) => (
+        {filteredWorks.slice(0, itemsToShow).map((work, idx) => (
           <div key={idx} className="group relative overflow-hidden rounded-2xl glass aspect-square lg:aspect-video cursor-pointer transition-all duration-500 hover:translate-y-[-8px]">
             <img 
               src={work.img} 
@@ -53,6 +72,19 @@ const Portfolio: React.FC = () => {
           </div>
         ))}
       </div>
+
+      {/* SEE MORE BUTTON - Only shows if there are more items hidden */}
+      {itemsToShow < filteredWorks.length && (
+        <div className="text-center mt-16">
+          <button 
+            onClick={handleShowMore}
+            className="group relative inline-flex items-center gap-3 px-10 py-4 bg-transparent border border-yellow-400/30 rounded-full font-bold text-white uppercase tracking-widest hover:bg-yellow-400 hover:text-black transition-all duration-300 active:scale-95"
+          >
+            See More Portfolio
+            <span className="text-xl group-hover:rotate-45 transition-transform duration-300">↗</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };
