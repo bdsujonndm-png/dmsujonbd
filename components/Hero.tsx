@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -25,8 +26,8 @@ const Hero: React.FC = () => {
         </span>
         
         <h1 className="text-4xl md:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">
-          Hello,  I'm <span className="text-gold-gradient italic font-serif">Sujon Ahmed</span>
-          <br className="hidden md:block" /> A Professional Digital Marketer
+             <span className="text-gold-gradient italic font-serif"> Sujon Ahmed</span>
+          <br className="hidden md:block" /> A professional digital marketer
         </h1>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-light">
