@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setTimeout(() => {
-      setStatus({ type: 'success', message: 'Message sent! Milon will contact you shortly.' });
+      setStatus({ type: 'success', message: 'Message sent! Sujon will contact you shortly.' });
       setFormData({ firstName: '', lastName: '', email: '', message: '' });
       setIsSubmitting(false);
       setTimeout(() => setStatus({ type: null, message: '' }), 5000);
@@ -38,8 +38,8 @@ const Contact: React.FC = () => {
       <div className="grid md:grid-cols-3 gap-10 mb-20">
         {[
           { icon: '📍', title: 'Location', value: 'Rangpur, Bangladesh' },
-          { icon: '📱', title: 'WhatsApp', value: '+880 1950-088225' },
-          { icon: '📧', title: 'Email', value: 'bdmilondm@gmail.com' }
+          { icon: '📱', title: 'WhatsApp', value: '+880 1995620916' },
+          { icon: '📧', title: 'Email', value: 'bdsujonndm@gmail.com' }
         ].map((item, i) => (
           <div key={i} className="glass p-8 rounded-3xl text-center neon-border group">
             <div className="text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">{item.icon}</div>
