@@ -3,11 +3,11 @@ import React from 'react';
 const Footer: React.FC = () => {
   // Social link gulo ekhane update korte parbe
   const socials = [
-    { name: 'Facebook', icon: 'fab fa-facebook-f', href: 'https://facebook.com/yourprofile' },
-    { name: 'Instagram', icon: 'fab fa-instagram', href: 'https://instagram.com/yourprofile' },
-    { name: 'Twitter', icon: 'fab fa-x-twitter', href: 'https://twitter.com/yourprofile' },
-    { name: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://linkedin.com/in/yourprofile' },
-    { name: 'YouTube', icon: 'fab fa-youtube', href: 'https://youtube.com/yourchannel' },
+    { name: 'Facebook', icon: 'fab fa-facebook-f', href: 'https://www.facebook.com/dmsujonnbd' },
+    { name: 'Instagram', icon: 'fab fa-instagram', href: 'https://instagram.com/dmsujonnbd' },
+    { name: 'Twitter', icon: 'fab fa-x-twitter', href: 'https://twitter.com/dmsujonnbd' },
+    { name: 'Pinterest', icon: 'fab fa-pinterest', href: 'https://www.pinterest.com/dmsujonnbd/_profile/' },
+    { name: 'YouTube', icon: 'fab fa-youtube', href: 'https://youtube.com' },
   ];
 
   return (
