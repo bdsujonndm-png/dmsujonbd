@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -17,29 +16,44 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-[#050505] text-white overflow-x-hidden selection:bg-yellow-400 selection:text-black">
       <Navbar />
       <main>
+        {/* Home Section */}
         <section id="home">
           <Hero />
           <Stats />
         </section>
-        <section id="about" className="py-20">
+
+        {/* About - Padding komano hoyeche */}
+        <section id="about" className="py-10">
           <About />
         </section>
-        <section id="resume" className="py-20 bg-[#080808]">
+
+        {/* Resume - Background color match kora hoyeche jate dag na thake */}
+        <section id="resume" className="py-10 bg-[#050505]">
           <Resume />
         </section>
-        <section id="service" className="py-20">
+
+        {/* Service */}
+        <section id="service" className="py-10">
           <Services />
         </section>
-        <section id="skills" className="py-20 bg-[#080808]">
+
+        {/* Skills - py-20 muche py-6 kora hoyeche ebong bg color match kora hoyeche */}
+        <section id="skills" className="py-6 bg-[#050505]">
           <Skills />
         </section>
-        <section id="portfolio" className="py-20">
+
+        {/* Portfolio - Upore padding ekdom zero kora hoyeche */}
+        <section id="portfolio" className="pt-0 pb-10">
           <Portfolio />
         </section>
-        <section id="pricing" className="py-20 bg-[#080808]">
+
+        {/* Pricing */}
+        <section id="pricing" className="py-10 bg-[#050505]">
           <Pricing />
         </section>
-        <section id="contact" className="py-20">
+
+        {/* Contact */}
+        <section id="contact" className="py-10">
           <Contact />
         </section>
       </main>
