@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero: React.FC = () => {
   return (
@@ -22,12 +23,46 @@ const Hero: React.FC = () => {
 
       <div className="max-w-4xl text-center relative z-10">
         <span className="inline-block py-1 px-4 mb-6 rounded-full border border-yellow-500/30 text-yellow-400 text-[10px] font-bold uppercase tracking-[0.4em] glass transition-all hover:bg-yellow-400/10 cursor-default">
-          Professional Digital Marketer
+          <Typewriter
+            words={[
+              'Professional Digital Marketer',
+              'YouTube Expert',
+              'Google Ads Expert',
+              'Facebook Ads Expert',
+              'Social Media Manager'
+            ]}
+            loop={0} // 0 means infinite loop
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={2000}
+          />
         </span>
         
         <h1 className="text-4xl md:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">
-            Hi,  <span className="text-gold-gradient italic font-serif">I'm Sujon Ahmed</span>
-          <br className="hidden md:block" /> A professional digital marketer
+            Hi, <span className="text-gold-gradient italic font-serif">I'm Sujon Ahmed</span>
+          <br className="hidden md:block" /> 
+          <span className="text-white">
+            A {' '}
+            <span className="text-yellow-400">
+              <Typewriter
+                words={[
+                  'Professional Digital Marketer',
+                  'YouTube Expert',
+                  'Google Ads Expert',
+                  'Facebook Ads Expert',
+                  'Social Media Manager'
+                ]}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={80}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
+            </span>
+          </span>
         </h1>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-light">
