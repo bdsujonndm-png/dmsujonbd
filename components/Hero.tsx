@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
         <div className="absolute -inset-2 bg-gradient-to-r from-yellow-400 to-orange-600 rounded-full blur-md opacity-30 group-hover:opacity-60 transition duration-1000"></div>
         <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-[#0a0a0a] shadow-2xl bg-[#111]">
           <img 
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr5E3Opd8Ia9Zm6T-3z7VBAeS-BInMVkxkrTtXvB1fY5cmI7oxlmlc8yWf-G2Mnfp91RPB7GHeOiPmn_SVQxypqKPbdZbs1RPwkQAoSAD7OMk308Q0gqBTnD7aZNKlwuvzk2EPojvCWFvs-yZ5Ug77PHGASJloTJN7zmmdR3lY2OlYfwJYoGg8yQ5gJuc/w275-h318/photo_2025-10-27_00-48-57.jpg" 
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr5E3Opd8Ia9Zm6T-3z7VBAeS-BInMVkxkrTtTvB1fY5cmI7oxlmlc8yWf-G2Mnfp91RPB7GHeOiPmn_SVQxypqKPbdZbs1RPwkQAoSAD7OMk308Q0gqBTnD7aZNKlwuvzk2EPojvCWFvs-yZ5Ug77PHGASJloTJN7zmmdR3lY2OlYfwJYoGg8yQ5gJuc/w275-h318/photo_2025-10-27_00-48-57.jpg" 
             alt="Sujon Ahmed" 
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
@@ -55,14 +55,14 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="max-w-4xl text-center relative z-10">
-        <span className="inline-block py-1 px-4 mb-6 rounded-full border border-yellow-500/30 text-yellow-400 text-[10px] font-bold uppercase tracking-[0.4em] glass transition-all hover:bg-yellow-400/10 cursor-default min-h-[28px]">
-          {text}<span className="animate-pulse">|</span>
+        {/* টাইপিং ইফেক্ট এখন শুধুমাত্র এখানে হবে */}
+        <span className="inline-flex items-center justify-center py-1 px-4 mb-6 rounded-full border border-yellow-500/30 text-yellow-400 text-[10px] font-bold uppercase tracking-[0.4em] glass transition-all hover:bg-yellow-400/10 cursor-default min-h-[30px] min-w-[280px]">
+          {text}<span className="ml-1 animate-pulse">|</span>
         </span>
         
         <h1 className="text-4xl md:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">
             Hi, <span className="text-gold-gradient italic font-serif">I'm Sujon Ahmed</span>
-          <br className="hidden md:block" /> 
-          <span className="block mt-2">A {text}<span className="text-yellow-400 animate-pulse">|</span></span>
+          <br className="hidden md:block" /> A professional digital marketer
         </h1>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-light">
