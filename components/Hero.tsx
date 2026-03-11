@@ -1,11 +1,45 @@
 
-import React from 'react';
-import { Typewriter } from 'react-simple-typewriter';
+import React, { useState, useEffect } from 'react';
 
 const Hero: React.FC = () => {
+  const [text, setText] = useState('');
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  const roles = [
+    'Professional Digital Marketer',
+    'YouTube Expert',
+    'Google Ads Expert',
+    'Facebook Ads Expert',
+    'Social Media Manager'
+  ];
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const currentRole = roles[roleIndex];
+      if (isDeleting) {
+        setText(currentRole.substring(0, text.length - 1));
+        setTypingSpeed(50);
+      } else {
+        setText(currentRole.substring(0, text.length + 1));
+        setTypingSpeed(150);
+      }
+
+      if (!isDeleting && text === currentRole) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && text === '') {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, roleIndex, typingSpeed]);
+
   return (
     <div className="relative min-h-[90vh] flex flex-col items-center justify-center px-6 pt-32 pb-20">
-      {/* Background glow effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-yellow-500/10 rounded-full blur-[120px] pointer-events-none"></div>
       
       <div className="relative mb-12 group cursor-pointer transition-transform duration-500 hover:scale-[1.02]">
@@ -17,52 +51,18 @@ const Hero: React.FC = () => {
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
         </div>
-        {/* Status indicator */}
         <div className="absolute bottom-6 right-6 w-6 h-6 bg-green-500 rounded-full border-4 border-[#050505] animate-pulse"></div>
       </div>
 
       <div className="max-w-4xl text-center relative z-10">
-        <span className="inline-block py-1 px-4 mb-6 rounded-full border border-yellow-500/30 text-yellow-400 text-[10px] font-bold uppercase tracking-[0.4em] glass transition-all hover:bg-yellow-400/10 cursor-default">
-          <Typewriter
-            words={[
-              'Professional Digital Marketer',
-              'YouTube Expert',
-              'Google Ads Expert',
-              'Facebook Ads Expert',
-              'Social Media Manager'
-            ]}
-            loop={0} // 0 means infinite loop
-            cursor
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={2000}
-          />
+        <span className="inline-block py-1 px-4 mb-6 rounded-full border border-yellow-500/30 text-yellow-400 text-[10px] font-bold uppercase tracking-[0.4em] glass transition-all hover:bg-yellow-400/10 cursor-default min-h-[28px]">
+          {text}<span className="animate-pulse">|</span>
         </span>
         
         <h1 className="text-4xl md:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">
             Hi, <span className="text-gold-gradient italic font-serif">I'm Sujon Ahmed</span>
           <br className="hidden md:block" /> 
-          <span className="text-white">
-            A {' '}
-            <span className="text-yellow-400">
-              <Typewriter
-                words={[
-                  'Professional Digital Marketer',
-                  'YouTube Expert',
-                  'Google Ads Expert',
-                  'Facebook Ads Expert',
-                  'Social Media Manager'
-                ]}
-                loop={0}
-                cursor
-                cursorStyle="|"
-                typeSpeed={80}
-                deleteSpeed={50}
-                delaySpeed={1500}
-              />
-            </span>
-          </span>
+          <span className="block mt-2">A {text}<span className="text-yellow-400 animate-pulse">|</span></span>
         </h1>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-light">
@@ -70,16 +70,10 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <a 
-            href="#portfolio"
-            className="px-10 py-4 gold-gradient text-black font-extrabold rounded-full hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 w-full sm:w-auto"
-          >
+          <a href="#portfolio" className="px-10 py-4 gold-gradient text-black font-extrabold rounded-full hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
             Explore Portfolio
           </a>
-          <a 
-            href="#contact"
-            className="px-10 py-4 border border-white/10 hover:border-yellow-400 text-white hover:text-yellow-400 font-bold rounded-full transition-all glass transform hover:-translate-y-1 active:scale-95 w-full sm:w-auto"
-          >
+          <a href="#contact" className="px-10 py-4 border border-white/10 hover:border-yellow-400 text-white hover:text-yellow-400 font-bold rounded-full transition-all glass transform hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
             Let's Talk
           </a>
         </div>
