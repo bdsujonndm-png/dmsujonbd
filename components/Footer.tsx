@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     { name: 'Facebook', icon: 'fab fa-facebook-f', href: 'https://www.facebook.com/dmsujonnbd' },
     { name: 'Instagram', icon: 'fab fa-instagram', href: 'https://instagram.com/dmsujonnbd' },
     { name: 'Twitter', icon: 'fab fa-x-twitter', href: 'https://twitter.com/dmsujonnbd' },
-    { name: 'Pinterest', icon: 'fab fa-pinterest', href: 'https://www.pinterest.com/dmsujonnbd/_profile/' },
+    { name: 'Linkedin', icon: 'fab fa-Linkedin', href: 'https://www.linkedin.com/in/prosujonbd' },
     { name: 'YouTube', icon: 'fab fa-youtube', href: 'https://youtube.com' },
   ];
 
